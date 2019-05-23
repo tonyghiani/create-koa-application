@@ -9,6 +9,9 @@
   "engines": {
     "node": ">=8"
   },
+  "scripts": {
+    "deploy": "./scripts/deploy.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcoantonioghiani01/create-koa-app.git"

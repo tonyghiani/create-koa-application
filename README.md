@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/create-koa-application.svg)](https://www.npmjs.com/package/create-koa-application) [![license](https://img.shields.io/github/license/marcoantonioghiani01/create-koa-application.svg)](https://github.com/marcoantonioghiani01/create-koa-application/blob/master/LICENSE) 
 > A structured boilerplate to create your Node app with Koa.js.
 
-Create Koa Application is a cli tool tp bootstrap a Koa.js application with a good environment preset and an alternative folder structure.
+Create Koa Application is a cli tool to bootstrap a Koa.js application with a good environment preset and an alternative folder structure.
 
 ## Requirements
 
