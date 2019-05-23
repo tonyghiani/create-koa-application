@@ -1,0 +1,33 @@
+{
+  "name": "create-koa-application",
+  "version": "1.0.0",
+  "description": "Structured boilerplate to create your Node app with Koa.js.",
+  "main": "index.js",
+  "bin": {
+    "create-koa-application": "index.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoantonioghiani01/create-koa-app.git"
+  },
+  "keywords": [
+    "Node",
+    "Koa"
+  ],
+  "author": "Marco Antonio Ghiani <marcoantonio.ghiani01@gmail.com> (https://github.com/marcoantonioghiani01)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcoantonioghiani01/create-koa-application/issues"
+  },
+  "homepage": "https://github.com/marcoantonioghiani01/create-koa-application#readme",
+  "dependencies": {
+    "chalk": "2.4.2",
+    "cli-spinner": "0.2.10",
+    "commander": "2.20.0",
+    "download-git-repo": "1.1.0",
+    "figlet": "1.2.1"
+  }
+}
