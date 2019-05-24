@@ -7,8 +7,8 @@ const msg = require('../lib/chalk');
 const { createSpinner } = require('./createSpinner');
 
 exports.applyPatch = async appName => {
+  const patchSpinner = createSpinner('Updating dependencies list...');
   try {
-    const patchSpinner = createSpinner('Updating dependencies list...');
     patchSpinner.start();
     const appPath = path.join(process.cwd(), appName)
     const packageJsonPath = path.join(appPath, 'package.json');
@@ -29,6 +29,7 @@ exports.applyPatch = async appName => {
     msg.success('Dependencies list updated!');
     return true;
   } catch (error) {
+    patchSpinner.stop(true);
     msg.error('Failed while updating the dependencies!');
     process.exit()
   }

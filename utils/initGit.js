@@ -7,8 +7,8 @@ const msg = require('../lib/chalk');
 const { createSpinner } = require('./createSpinner');
 
 exports.initGit = async () => {
+  const gitSpinner = createSpinner('Initializing git repository...');
   try {
-    const gitSpinner = createSpinner('Initializing git repository...');
     gitSpinner.start();
     if (await _checkRepoExist()) return false;
     await exec('git init');
@@ -18,6 +18,7 @@ exports.initGit = async () => {
     msg.success('Created git repository!');
     return true;
   } catch (error) {
+    gitSpinner.stop(true);
     msg.error('Something went wrong while creting the repository, be sure to have git installed!');
     process.exit()
   }
