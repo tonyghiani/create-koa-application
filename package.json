@@ -25,9 +25,10 @@
   ],
   "files": [
     "index.js",
-    "create-koa-application",
+    "create-koa-application.js",
     "lib/",
-    "utils"
+    "utils/",
+    "assets/"
   ],
   "author": "Marco Antonio Ghiani <marcoantonio.ghiani01@gmail.com> (https://github.com/marcoantonioghiani01)",
   "license": "MIT",

@@ -7,7 +7,7 @@
 Create Koa Application is a cli tool to bootstrap a Koa.js application with a good environment preset and an alternative folder structure.
 
 <p align='center'>
-  <img src='https://unpkg.com/create-koa-application@1.0.2/assets/creation.svg' width='500' alt=''>
+  <img src='https://unpkg.com/create-koa-application@latest/assets/creation.svg' width='500' alt=''>
 </p>
 
 ## Table of contents
