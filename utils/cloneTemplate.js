@@ -21,6 +21,7 @@ exports.cloneTemplate = async appName => {
   } catch (error) {
     koaAppSpinner.stop(true);
     msg.error('Failed while fetching the template!');
+    msg.error('Is possible that you are trying to create the project in a restricted directory');
     process.exit()
   }
 };
