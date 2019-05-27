@@ -1,6 +1,6 @@
 {
   "name": "create-koa-application",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Structured boilerplate to create your Node app with Koa.js.",
   "main": "index.js",
   "bin": {
