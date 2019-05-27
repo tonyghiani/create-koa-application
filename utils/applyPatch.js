@@ -13,6 +13,7 @@ exports.applyPatch = async appName => {
     const appPath = path.join(process.cwd(), appName)
     const packageJsonPath = path.join(appPath, 'package.json');
     const licensePath = path.join(appPath, 'LICENSE');
+    const contributingPath = path.join(appPath, 'CONTRIBUTING.md');
     const packageJson = require(packageJsonPath);
     packageJson.name = appName
     packageJson.version = '0.1.0'
@@ -24,6 +25,7 @@ exports.applyPatch = async appName => {
     delete packageJson.license;
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
     fs.unlinkSync(licensePath)
+    fs.unlinkSync(contributingPath)
     await new Promise(res => setTimeout(res, 1000))
     patchSpinner.stop(true);
     msg.success('Dependencies list updated!');
