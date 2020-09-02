@@ -46,8 +46,21 @@ npx create-koa-application <project-name>
 
 Create a new application running on your terminal:
 
+### Installed Globally
+
 ```bash
 create-koa-application <project-name>
+```
+### npm
+
+```bash
+npm init koa-application <project-name>
+```
+
+### yarn
+
+```bash
+yarn create koa-application <project-name>
 ```
 
 After your project is correctly initialized
