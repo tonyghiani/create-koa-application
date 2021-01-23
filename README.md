@@ -82,7 +82,6 @@ After your project is correctly initialized
 ├── .huskyrc
 ├── .prettierrc
 ├── .prettierignore
-├── .prettierignore
 ├── api
 │   ├── users
 │   │   ├── index.js
